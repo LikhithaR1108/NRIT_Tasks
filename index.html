@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Basic Calculator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="container">
+    <h1>Basic Calculator and Practice Exercises</h1>
+    <p class="subtitle">Calculator + Practice Exercises</p>
+  </header>
+
+  <main class="container grid">
+    <section class="card">
+      <h2>🧮 Basic Calculator</h2>
+      <form id="calc-form">
+        <label>First Number
+          <input id="num1" type="number" step="any" placeholder="e.g., 12.5" required/>
+        </label>
+
+        <label>Second Number
+          <input id="num2" type="number" step="any" placeholder="e.g., 3" required/>
+        </label>
+
+        <label>Operation
+          <select id="operation" required>
+            <option value="add">Add (+)</option>
+            <option value="subtract">Subtract (−)</option>
+            <option value="multiply">Multiply (×)</option>
+            <option value="divide">Divide (÷)</option>
+          </select>
+        </label>
+
+        <button type="submit">Calculate</button>
+        <button type="button" id="calc-clear" class="secondary">Clear</button>
+      </form>
+      <div id="calc-result" class="result" aria-live="polite">Result will appear here.</div>
+    </section>
+    
+    <section class="card">
+      <h2>📝 Practice Exercises</h2>
+
+      <details open>
+        <summary><strong>1) Reverse a String</strong></summary>
+        <form id="reverse-form" class="mini-form">
+          <input id="reverse-input" type="text" placeholder="Type any text..." required/>
+          <button type="submit">Reverse</button>
+        </form>
+        <div id="reverse-output" class="result">—</div>
+      </details>
+
+      <details>
+        <summary><strong>2) Count Vowels</strong></summary>
+        <form id="vowels-form" class="mini-form">
+          <input id="vowels-input" type="text" placeholder="Type any text..." required/>
+          <button type="submit">Count</button>
+        </form>
+        <div id="vowels-output" class="result">—</div>
+      </details>
+
+      <details>
+        <summary><strong>3) Sum Numbers from 1 to N</strong></summary>
+        <form id="sum-form" class="mini-form">
+          <input id="sum-input" type="number" min="1" step="1" placeholder="Enter N (>=1)" required/>
+          <button type="submit">Sum</button>
+        </form>
+        <div id="sum-output" class="result">—</div>
+      </details>
+
+      <details>
+        <summary><strong>4) Even or Odd</strong></summary>
+        <form id="evenodd-form" class="mini-form">
+          <input id="evenodd-input" type="number" step="1" placeholder="Enter an integer" required/>
+          <button type="submit">Check</button>
+        </form>
+        <div id="evenodd-output" class="result">—</div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="container foot">
+    <p>Tip: Open DevTools Console to see logs (<code>F12</code> or <code>Ctrl+Shift+I</code>).</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="practice.js"></script>
+</body>
+</html>
