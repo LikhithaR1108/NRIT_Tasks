@@ -1,0 +1,28 @@
+:root{ --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#9aa1ad; --accent:#22c55e; --accent-2:#3b82f6; --border:#1f2937; --ghost:#222938; }
+.day4-wrap{ margin-top:24px; }
+.small{ font-size:12px; }
+.grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:16px; margin-top:12px; }
+.card{ background:var(--card); border:1px solid var(--border); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 18px rgba(0,0,0,0.25); }
+.poster{ width:100%; height:340px; object-fit:cover; display:block; background:#0b0f1f; }
+.card-body{ padding:14px; display:flex; flex-direction:column; gap:10px; }
+.card-title{ margin:0; font-size:18px; }
+.year{ font-weight:500; color:var(--muted); }
+.card-desc{ margin:0; color:#d7dbe3; }
+.row{ display:flex; gap:10px; align-items:center; }
+.space-between{ justify-content:space-between; }
+.btn{ background:var(--ghost); color:var(--text); border:1px solid var(--border); padding:8px 10px; border-radius:10px; cursor:pointer; }
+.btn:hover{ border-color:#31405e; }
+.btn.small{ padding:4px 10px; }
+.btn.primary{ background:var(--accent-2); border-color:transparent; }
+.btn.ghost{ background:transparent; border-color:var(--border); }
+.like-btn{ background:transparent; border:1px solid var(--border); padding:8px 12px; border-radius:999px; cursor:pointer; font-weight:600; }
+.like-btn.liked{ border-color:transparent; background:#3a1f29; color:#ff7a96; }
+.label{ font-size:14px; color:var(--muted); }
+.input{ width:100%; background:#0c1326; color:#e5e7eb; border:1px solid var(--border); border-radius:10px; padding:10px; outline:none; }
+.input:focus{ border-color:#3756a4; }
+.review{ background:#0b1225; border:1px solid #1a2749; border-radius:10px; padding:10px; }
+.stars{ position:relative; display:inline-block; font-size:18px; line-height:1; }
+.stars-base{ color:#2e354e; }
+.stars-fill{ position:absolute; top:0; left:0; white-space:nowrap; overflow:hidden; color:#ffcc00; }
+.rating-row{ display:flex; align-items:center; gap:8px; }
+hr{ border:none; height:1px; background:var(--border); margin:6px 0; }
